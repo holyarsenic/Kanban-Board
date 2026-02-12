@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.nav {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 10vh;
+  width: 96vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav button {
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(37, 35, 35);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.box {
+  height: 88vh;
+  width: 32%;
+  background-color: rgb(27, 27, 27);
+  border-radius: 10px;
+  padding: 0.8rem;
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.value {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.tasks {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  background-color: rgb(54, 53, 53);
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: grab;
+}
+
+.tasks button {
+  background-color: red;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border: none;
+  border-radius: 5px;
+  align-self: flex-end;
+  outline: none;
+  cursor: pointer;
+}
+
+.hover-out {
+  border: 1px solid white;
+  transform: scale(1.02);
+}
+
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal .bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(61, 61, 61, 0.404);
+  backdrop-filter: blur(5px);
+}
+
+.modal .center {
+  background-color: rgb(27, 27, 27);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 100;
+}
+
+.modal .center input,
+.modal .center textarea,
+.modal .center select {
+  background-color: rgb(54, 53, 53);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.modal .center button {
+  background-color: rgb(52, 52, 52);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.3rem;
+  width: fit-content;
+  align-self: center;
+}

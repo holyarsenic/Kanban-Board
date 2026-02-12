@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <navbar>
+    <div class="nav">
+      <p>Kanban</p>
+      <button class="toggle-modal">Add new Task</button>
+    </div>
+  </navbar>
+
+  <div class="main">
+
+    <div class="box todo">
+      <div class="value">
+        <p>To Do</p>
+        <p class="right">Count</p>
+      </div>
+
+      <div draggable="true" class="tasks demo">
+        <h2>Task 1</h2>
+        <p>Description for Task 1</p>
+        <button>Delete</button>
+      </div>
+
+    </div>
+
+    <div class="box progress">
+      <div class="value">
+        <p>In Progress</p>
+        <p class="right">Count</p>
+      </div>
+    </div>
+
+    <div class="box done">
+      <div class="value">
+        <p>Done</p>
+        <p class="right">Count</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="bg"></div>
+    <div class="center">
+      <input type="text" class="input-box" placeholder="Task Title">
+      <textarea class="task-box" placeholder="Task Description"></textarea>
+      <button class="add-task-btn add-new-task">Add Task</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
