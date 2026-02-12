@@ -141,4 +141,50 @@ body {
   margin-bottom: 0.3rem;
   width: fit-content;
   align-self: center;
+
+}
+
+/*Made in Responsive*/
+
+@media (max-width: 768px) {
+
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .nav {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .main {
+    gap: 0.4rem;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    font-size: 0.6rem;
+  }
+
+  .tasks {
+    height: auto;
+    font-size: 0.6rem;
+  }
+
+  .tasks h2 {
+    font-size: 0.8rem;
+  }
+
+  .tasks p {
+    font-size: 0.4rem;
+  }
+
+  .tasks button {
+    padding: 0.1rem 0.4rem;
+    font-size: 0.4rem;
+  }
+
 }
