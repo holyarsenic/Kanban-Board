@@ -18,7 +18,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   height: 10vh;
-  width: 96vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -141,7 +141,6 @@ body {
   margin-bottom: 0.3rem;
   width: fit-content;
   align-self: center;
-
 }
 
 /*Made in Responsive*/
@@ -159,13 +158,14 @@ body {
   }
 
   .main {
+    flex-direction: column;
     gap: 0.4rem;
   }
 
   .box {
     width: 100%;
     height: auto;
-    min-height: 300px;
+    min-height: 200px;
     font-size: 0.6rem;
   }
 
